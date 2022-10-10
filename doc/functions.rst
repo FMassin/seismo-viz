@@ -9,10 +9,11 @@ Basic plotting
 ==============
 
 Basic plotting can be made more functional-looking. Here is an example:
+
 .. figure:: plots/funct.png
    :width: 100%
 
-   Earthquake map
+   Basic plot
    :label:`figure-functions-plots` (sources: :source:`apps/funct.py`).
    
 Breaking it up
@@ -43,7 +44,7 @@ Guide lines also help to visualise the dynamic of the represented data:
 Wrapping it up 
 --------------
 
-...
+An example wrapping this up is available in `apps/plot_funct.py` and can be used as follows:
 
 .. code:: shell
 
