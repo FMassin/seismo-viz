@@ -10,11 +10,11 @@ Drawing Earthquake Map
 
 ...
 
-.. figure:: plot/map.png
+.. figure:: /plot/map.png
    :width: 66.6%
 
    Earthquake map
-   :label:`figure-earthquake-map` (sources: :source:`apps/plotwms.py`).
+   :label:`figure-earthquake-map` (sources: :source:`/apps/plotwms.py`).
 
 
 Getting the seismological Catalog 

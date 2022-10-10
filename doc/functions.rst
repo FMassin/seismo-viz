@@ -10,14 +10,14 @@ Basic plotting
 
 Basic plotting can be made more functional-looking. Here is an example:
 
-.. figure:: plot/funct.png
+.. figure:: /plot/funct.png
    :width: 66.6%
 
    Basic plot
-   :label:`figure-functions-plots` (sources: :source:`apps/funct.py`).
+   :label:`figure-functions-plots` (sources: :source:`/apps/plot_funct.py`).
    
-Breaking it up
---------------
+Breaking it down
+----------------
 First it is possible to get intermediary ticks as follows:   
 
 .. code:: python
@@ -44,9 +44,9 @@ Guide lines also help to visualise the dynamic of the represented data:
 Wrapping it up 
 --------------
 
-An example wrapping this up is available in `apps/plot_funct.py` and can be used as follows:
+The example above wrapping this up is available in :source:`/apps/plot_funct.py` and can be used as follows:
 
-.. code:: shell
+.. code:: bash
 
    >>> apps/plot_funct.py
    Default reference model value is setup to 0.0001
