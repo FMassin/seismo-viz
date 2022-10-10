@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import matplotlib.pyplot as plt
 import cartopy.crs as ccrs
 import obspy.core.event.catalog, obspy.geodetics.base
@@ -19,7 +19,7 @@ def plot_eq(ax,m,marker,color=None,**opts):
 
     o=m.origin_id.get_referred_object()
     desc='%.3g km deep %s%.2g\nat %s\nby %s (%s)'%(o.depth/1000,m.magnitude_type,m.mag,m.creation_info.creation_time,m.creation_info.author,m.creation_info.agency_id)
-    ax.plot(o.longitude,o.latitude,marker,color='w',zorder=1,markeredgewidth=4,**opts)
+    ax.plot(o.longitude,o.latitude,marker,color='w',zorder=1,markeredgewidth=6,**opts)
     ax.plot(o.longitude,o.latitude,marker,color='k',zorder=2,markeredgewidth=1,**opts)
     if color is not None:
         opts['color']=color
@@ -85,7 +85,9 @@ def plot_wms(self,
     
     # Add WMS imaging.    
     ax.add_wms(wms=wms,
-               layers=layers)
+               layers=layers,
+               #wms_kwargs={'width':2160*2}
+               )
 
     # Add earthquakes
     opts={'transform':ccrs.PlateCarree(),
@@ -105,6 +107,8 @@ def plot_wms(self,
 
     if len(self)==1:
         ax.legend()
+    
+    fig.savefig('plot/map.png')
     plt.show()
 
 

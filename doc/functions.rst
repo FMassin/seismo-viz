@@ -5,20 +5,43 @@
 .. ----------------------------------------------------------------------------
 .. _chap-map:
 
-Drawing functions
-=================
+Basic plotting
+==============
 
-...
-
+Basic plotting can be made more functional-looking. Here is an example:
 .. figure:: plots/funct.png
    :width: 100%
 
    Earthquake map
    :label:`figure-functions-plots` (sources: :source:`apps/funct.py`).
+   
+Breaking it up
+--------------
+First it is possible to get intermediary ticks as follows:   
 
+.. code:: python
 
-Drawing the plot 
-----------------
+   >>> ax.yaxis.set_minor_locator(matplotlib.ticker.AutoMinorLocator())
+   >>> ax.xaxis.set_minor_locator(matplotlib.ticker.AutoMinorLocator())
+   
+
+Another trick is to make sure all ticks are drawn on all axis of the plot:
+
+.. code:: python
+
+   >>> ax.tick_params(right=True, top=True,
+                      left=True, bottom=True,
+                      which='both')
+
+Guide lines also help to visualise the dynamic of the represented data:
+
+.. code:: python
+
+   >>> ax.grid(visible=True, which='major', color='gray', linestyle='dashdot', zorder=-99)
+   >>> ax.grid(visible=True, which='minor', color='beige',  ls='-', zorder=-99)
+
+Wrapping it up 
+--------------
 
 ...
 
