@@ -11,7 +11,7 @@ Drawing Earthquake Map
 ...
 
 .. figure:: plot/map.png
-   :width: 100%
+   :width: 66.6%
 
    Earthquake map
    :label:`figure-earthquake-map` (sources: :source:`apps/plotwms.py`).

@@ -11,7 +11,7 @@ Basic plotting
 Basic plotting can be made more functional-looking. Here is an example:
 
 .. figure:: plot/funct.png
-   :width: 100%
+   :width: 66.6%
 
    Basic plot
    :label:`figure-functions-plots` (sources: :source:`apps/funct.py`).
