@@ -1,1 +1,1 @@
-# Seismological Visualization: 
+# Seismological Visualization
