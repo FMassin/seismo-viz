@@ -10,7 +10,7 @@ Basic plotting
 
 Basic plotting can be made more functional-looking. Here is an example:
 
-.. figure:: plots/funct.png
+.. figure:: plot/funct.png
    :width: 100%
 
    Basic plot

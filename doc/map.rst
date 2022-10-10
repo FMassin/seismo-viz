@@ -10,7 +10,7 @@ Drawing Earthquake Map
 
 ...
 
-.. figure:: plots/map.png
+.. figure:: plot/map.png
    :width: 100%
 
    Earthquake map
